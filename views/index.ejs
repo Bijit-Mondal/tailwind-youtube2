@@ -10,13 +10,18 @@
     }    
     .text-xl::selection{
       background-color: #9800CD;
+      color:black;
+    }
+    .text-2xl::selection{
+      background-color: #9800CD;
+      color:black;
     }
     .mr-5::selection{
       background-color: none;
       color:#9800CD;
     }
     .text-sm::selection{
-      background-color: none;
+      background-color: black;
       color:#9800CD;
     }
     .mt-4::selection{
@@ -24,7 +29,15 @@
     }
     .selection::selection{
       background-color: none;
-      color: #9800CD; selection 
+      color: #9800CD; 
+    }
+    .shift{
+      margin-left: 120px;
+    }
+    @media screen and (max-width:1000px){
+      .shift{
+        margin-left: 85px;
+      }
     }
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52421603-5"></script>
@@ -33,14 +46,14 @@
   <!--NavBar-->
   <header class="text-gray-500 bg-gray-900 body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" target="blank" href="https://grabberyoutube.herokuapp.com/">
+    <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
       <img src="/images/youtube.png" class="image" width="70px" height="90px" draggable="false">
       <span class="ml-3 text-xl">Grabber</span>
     </a>
     <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-white" href="#">Home</a>
-      <a class="mr-5 hover:text-white" href="#">About</a>
-      <a class="mr-5 hover:text-white" href="mailto:bijitmondal567@gmail.com">Contact Me</a>
+      <a class="mr-5 hover:text-white text-gray-500" href="#">Home</a>
+      <a class="mr-5 hover:text-white text-gray-500" href="#">About</a>
+      <a class="mr-5 hover:text-white text-gray-500" href="mailto:bijitmondal567@gmail.com">Contact Me</a>
     </nav>
     <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Login
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
@@ -68,18 +81,214 @@
     </div>
   </div>
 </form>
-  <!-- Cards -->
+<!--Suggestion-->
 <section class="text-gray-500 bg-gray-900 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -mx-4 -mb-10 text-center">
       <div class="sm:w-1/1 mb-10 px-10">
         <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full" src="http://i3.ytimg.com/vi/_c9I2-OwKCc/hqdefault.jpg">
+          <img alt="content" class="object-cover object-center h-full w-full" src="http://i3.ytimg.com/vi/fILC1AqOM_k/hqdefault.jpg">
         </div>
-        <a href="https://youtu.be/_c9I2-OwKCc"class="title-font text-2xl font-medium text-white mt-6 mb-3">Electrostatic Potential and Capacitance 10 : CAPACITOR-2 : Parallel Plate Capacitor JEE MAINS/NEET</a>
-        <p class="leading-relaxed text-base">Live Classes, Video Lectures, Test Series, Lecturewise notes, topicwise DPP, dynamic Exercise and much more on Physicswallah App.</p>
-        <a href="#"><button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded">Download Audio</button></a>
-        <a href="#"><button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded">Download Video</button></a>
+        <a href="https://www.youtube.com/watch?v=fILC1AqOM_k"class="title-font text-2xl font-medium text-white mt-6 mb-3">চল রাস্তায় সাজি ট্রাম লাইন l Chal Rastay Saaji Tram Line l Shreya Ghoshal l Lyrics
+
+</a>
+        <p class="leading-relaxed text-base">চল রাস্তায় সাজি ট্রাম লাইন - Chal rastay saaji tram line
+
+Singer : Shreya Ghoshal
+Music : Debojyoti Mishra
+Lyrics : Srijato
+Movie : Autograph (2010)</p>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadAudio(`fILC1AqOM_k`,`চল রাস্তায় সাজি ট্রাম লাইন`)">Download Audio</button>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadVideo(`fILC1AqOM_k`,`Physicswallah`)">Download Video</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End Of 1-->
+<section class="text-gray-500 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/1 mb-10 px-10">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="http://i3.ytimg.com/vi/e52Ysc_bl_s/hqdefault.jpg">
+        </div>
+        <a href="https://youtu.be/e52Ysc_bl_s"class="title-font text-2xl font-medium text-white mt-6 mb-3">Amar Bhindeshi Tara - Chondrobindu (Lyrics)</a>
+        <p class="leading-relaxed text-base">#Chandrabindoo  #BanglaBand  #VinDeshiTara</p>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadAudio(`e52Ysc_bl_s`,`Amar Bhindeshi Tara`)">Download Audio</button>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadVideo(`e52Ysc_bl_s`,`Physicswallah`)">Download Video</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--2-->
+<section class="text-gray-500 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/1 mb-10 px-10">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="http://i3.ytimg.com/vi/oJuPATeVhiw/hqdefault.jpg">
+        </div>
+        <a href="https://youtu.be/oJuPATeVhiw"class="title-font text-2xl font-medium text-white mt-6 mb-3">E Tumi Kemon Tumi Jaatishwar Lyric Rupankar Kabir Suman</a>
+        <p class="leading-relaxed text-base"></p>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadAudio(`oJuPATeVhiw`,`E Kemon Tumi`)">Download Audio</button>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadVideo(`oJuPATeVhiw`,`Physicswallah`)">Download Video</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--3-->
+<section class="text-gray-500 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/1 mb-10 px-10">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="http://i3.ytimg.com/vi/qj_7J8RNozI/hqdefault.jpg">
+        </div>
+        <a href="https://youtu.be/qj_7J8RNozI"class="title-font text-2xl font-medium text-white mt-6 mb-3">Bondhu Chol । বন্ধু চল । Open Tee Bioscope । Anupam Roy । Anindya</a>
+        <p class="leading-relaxed text-base">Bondhu Chol | বন্ধু চল
+Make a journey through nostalgia
+
+
+Artist:              Anupam Roy, Anindya Chottopadhay
+Movie:             Open Tee Bioscope
+Music Label :  Asha Audio
+Composition: Shantonu Moitra
+Lyrics:              Prasen</p>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadAudio(`qj_7J8RNozI`,`Bandhu Chol`)">Download Audio</button>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadVideo(`qj_7J8RNozI`,`Physicswallah`)">Download Video</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--4-->
+<section class="text-gray-500 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/1 mb-10 px-10">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="http://i3.ytimg.com/vi/zKg2kStRxb8/hqdefault.jpg">
+        </div>
+        <a href="https://youtu.be/zKg2kStRxb8"class="title-font text-2xl font-medium text-white mt-6 mb-3">Jagere jagere song Duet version / Prem Amar / 2009 / Shreya ghosal & Nachiketa Chakrabarty</a>
+        <p class="leading-relaxed text-base">Movie Name: Prem Amar 
+Releasing year : 2009
+Singer : Shreya ghosal & Nachiketa Chakrabarty 
+</p>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadAudio(`zKg2kStRxb8`,`Jagere Jagere Mon`)">Download Audio</button>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadVideo(`zKg2kStRxb8`,`Physicswallah`)">Download Video</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--5-->
+<section class="text-gray-500 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/1 mb-10 px-10">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="http://i3.ytimg.com/vi/oW3LgwmaBVo/hqdefault.jpg">
+        </div>
+        <a href="https://youtu.be/oW3LgwmaBVo"class="title-font text-2xl font-medium text-white mt-6 mb-3">লাল সারি</a>
+        <p class="leading-relaxed text-base"></p>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadAudio(`oW3LgwmaBVo`,`লাল সারি`)">Download Audio</button>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadVideo(`oW3LgwmaBVo`,`Physicswallah`)">Download Video</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--6-->
+<section class="text-gray-500 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/1 mb-10 px-10">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="http://i3.ytimg.com/vi/ozisKGdhlUQ/hqdefault.jpg">
+        </div>
+        <a href="https://youtu.be/ozisKGdhlUQ"class="title-font text-2xl font-medium text-white mt-6 mb-3">Piya Re Piya Re | Chirodini Tumi Je Amar | Rahul | Priyanka | Zubeen Garg | Jeet Gannguli | SVF</a>
+        <p class="leading-relaxed text-base">The lovesick heart craves for love that is expressed in the track "Piya Re Piya Re" from the Raj Chakraborty directed movie "Chirodini Tumi Je Amar . The movie by SVF stars Rahul and Priyanka in lead roles. The song is composed by ace music director Jeet Gannguli, and penned by Priyo Chattopadhyay.
+</p>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadAudio(`ozisKGdhlUQ`,`Piya Re Piya Re`)">Download Audio</button>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadVideo(`ozisKGdhlUQ`,`Physicswallah`)">Download Video</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--7-->
+<section class="text-gray-500 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/1 mb-10 px-10">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="http://i3.ytimg.com/vi/6SkQ-srIJVM/hqdefault.jpg">
+        </div>
+        <a href="https://youtu.be/6SkQ-srIJVM"class="title-font text-2xl font-medium text-white mt-6 mb-3">Mon Bojhe Naa | Chirodini Tumi Je Amar 2 | Arjun Chakraborty | Arijit Singh | SVF</a>
+        <p class="leading-relaxed text-base">Film         : Chirodini Tumi Je Amar 2.
+Starring    : Arjun Chakraborty, Urmila Mahanta, Riddhi Sen, Bihu, Ena Saha, Kharaj Mukherjee.
+Producer  : SVF
+Presenter : Shrikant Mohta & Mahendra Soni
+Direction  : Soumik Chattopadhyay 
+DOP: Madhu Shee 
+Singer: Arijit Singh
+Music : Jeet Gannguli
+Lyrics: Prasen
+Music Label : SVF Music
+</p>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadAudio(`6SkQ-srIJVM`,`Mon Bojhe Naa`)">Download Audio</button>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadVideo(`6SkQ-srIJVM`,`Physicswallah`)">Download Video</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--8-->
+<section class="text-gray-500 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/1 mb-10 px-10">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="http://i3.ytimg.com/vi/ihufN7et2xQ/hqdefault.jpg">
+        </div>
+        <a href="https://youtu.be/ihufN7et2xQ"class="title-font text-2xl font-medium text-white mt-6 mb-3">Bawshonto Eshe Geche (Female)</a>
+        <p class="leading-relaxed text-base">Provided to YouTube by Super Cassettes Industries Private Limited
+
+Bawshonto Eshe Geche (Female) · Lagnajita Chakrborty · Anupam Roy · Anupam Roy
+
+Chotushkone</p>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadAudio(`ihufN7et2xQ`,`Bawshonto Eshe Geche`)">Download Audio</button>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadVideo(`ihufN7et2xQ`,`Physicswallah`)">Download Video</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--9-->
+<section class="text-gray-500 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/1 mb-10 px-10">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="http://i3.ytimg.com/vi/kPlaAJRW7b8/hqdefault.jpg">
+        </div>
+        <a href="https://youtu.be/kPlaAJRW7b8"class="title-font text-2xl font-medium text-white mt-6 mb-3">Dekhechi Rupsagore | দেখেছি রূপসাগরে | Anirban Sikdar | Bangla Folk Song | New Music Video</a>
+        <p class="leading-relaxed text-base">Presenting a new rendition of a very popular Bangla folk song - Dekhechi Rupsagore, originally written by Nabanidas Khyapa Baul. Anirban Sikdar is one of the upcoming gem singer in bangla music industry at present. The sole purpose of this production is to redefine this beautiful song once again with a simple story of distant friendship. Kindly share your thoughts in the comment section. Like Share and Subscribe.</p>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadAudio(`kPlaAJRW7b8`,`দেখেছি রূপসাগরে`)">Download Audio</button>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadVideo(`kPlaAJRW7b8`,`Physicswallah`)">Download Video</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--10-->
+<section class="text-gray-500 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/1 mb-10 px-10">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="http://i3.ytimg.com/vi/S04SUzfySc0/hqdefault.jpg">
+        </div>
+        <a href="https://youtu.be/S04SUzfySc0"class="title-font text-2xl font-medium text-white mt-6 mb-3">Raabta (Kehte Hain Khuda Ne) - Agent Vinod</a>
+        <p class="leading-relaxed text-base">Raabta (Kehte Hain Khuda Ne)
+Movie : Agent Vinod
+Music :  Pritam
+Singers : Shreya Ghoshal, Arijit Singh, Joi BaruaS04SUzfySc0</p>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadAudio(`S04SUzfySc0`,`Raabta (Kehte Hain Khuda Ne)`)">Download Audio</button>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadVideo(`S04SUzfySc0`,`Physicswallah`)">Download Video</button>
       </div>
     </div>
   </div>
@@ -131,12 +340,12 @@
         <a href="https://twitter.com/BIJITMONDAL7" rel="noopener noreferrer" class="text-gray-500 ml-1 selection" target="_blank">@mondalbijit</a>
       </p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-        <a class="text-gray-600" tatrget="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://grabberyoutube.herokuapp.com/">
+        <a class="text-gray-600" tatrget="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://grabberyoutube.herokuapp.com">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-600" target="_blank" href="https://twitter.com/share?text=Youtube+To+mp3+and+mp4+downloader.+Convert+Youtube+videos+online+%26+save.&url=https://grabberyoutube.herokuapp.com/">
+        <a class="ml-3 text-gray-600" target="_blank" href="https://twitter.com/share?text=Youtube+To+mp3+and+mp4+downloader.+Convert+Youtube+videos+online+%26+save.&url=https://grabberyoutube.herokuapp.com">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
           </svg>
@@ -160,5 +369,27 @@
 <!--Script-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="/javascripts/script.js"></script>
+<script>
+  function DownloadAudio(vid,name){
+  console.log(vid);
+  console.log(name);
+  vid=encodeURIComponent(vid);
+  name=encodeURIComponent(name);
+  let url = window.location.href+'youtube/download/audio/'+vid+'/'+name;//For Production 
+  window.open(
+    url,
+    "_blank");
+}
+function DownloadVideo(vid,name){
+  console.log(vid);
+  console.log(name);
+  vid=encodeURIComponent(vid);
+  name=encodeURIComponent(name);
+  let url = window.location.href+'youtube/download/video/'+vid+'/'+name;
+  window.open(
+    url,
+    "_blank");
+</script>
 </body>
 </html>
+
