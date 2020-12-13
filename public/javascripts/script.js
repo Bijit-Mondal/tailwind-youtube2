@@ -53,7 +53,7 @@ function ShowResults(response){
   for(let i=0;i<json.items.length;i++){
       let copy = template;
 
-      thumbnail_url = json.items[i].snippet.thumbnails.default.url;
+      thumbnail_url = json.items[i].snippet.thumbnails.high.url;
       title = json.items[i].snippet.title;
       channel = json.items[i].snippet.channelTitle;
       desc = json.items[i].snippet.description;
