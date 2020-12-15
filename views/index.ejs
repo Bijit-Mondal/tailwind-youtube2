@@ -34,6 +34,19 @@
     .shift{
       margin-left: 120px;
     }
+        .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+    #bengali{
+    	display: none;
+    }
+    .hindi{
+    	display: none;
+    }
     @media screen and (max-width:1000px){
       .shift{
         margin-left: 85px;
@@ -55,7 +68,7 @@
       <a class="mr-5 hover:text-white text-gray-500" href="#">About</a>
       <a class="mr-5 hover:text-white text-gray-500" href="mailto:bijitmondal567@gmail.com">Contact Me</a>
     </nav>
-    <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Login
+    <button class="modal-open inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Our Suggestion
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
@@ -81,13 +94,51 @@
     </div>
   </div>
 </form>
+  <!--Modal-->
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    
+    <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+      
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">(Esc)</span>
+      </div>
+
+      <!-- Add margin if you want to see some of the overlay behind the modal-->
+      <div class="modal-content py-4 text-left px-6">
+        <!--Title-->
+        <div class="flex justify-between items-center pb-3">
+          <p class="text-2xl font-bold">Hey Buddy It's So Pleasure To Meet You Here</p>
+          <div class="modal-close cursor-pointer z-50">
+            <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+              <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+            </svg>
+          </div>
+        </div>
+
+        <!--Body-->
+        <p>What Kind Of Song You Like The Most</p>
+        <button class="modal-close px-4 bg-transparent p-3 rounded-lg text-indigo-500 hover:bg-gray-100 hover:text-indigo-400 mr-2" id="see">Bengali Song</button>
+        <button class="px-4 modal-close bg-transparent p-3 rounded-lg text-indigo-500 hover:bg-gray-100 hover:text-indigo-400 mr-2" id="hindisee">Hindi Song </button>
+        <!--Footer-->
+        <div class="flex justify-end pt-2">
+          <button class="modal-close px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 <!--Suggestion-->
+<div id="bengali">
 <section class="text-gray-500 bg-gray-900 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -mx-4 -mb-10 text-center">
       <div class="sm:w-1/1 mb-10 px-10">
-        <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full" src="http://i3.ytimg.com/vi/fILC1AqOM_k/hqdefault.jpg">
+        <div class="rounded-lg h-64 object-center overflow-hidden">
+          <img alt="content" class="object-cover h-full object-center h-full w-full" src="http://i3.ytimg.com/vi/fILC1AqOM_k/hqdefault.jpg">
         </div>
         <a href="https://www.youtube.com/watch?v=fILC1AqOM_k"class="title-font text-2xl font-medium text-white mt-6 mb-3">চল রাস্তায় সাজি ট্রাম লাইন l Chal Rastay Saaji Tram Line l Shreya Ghoshal l Lyrics
 
@@ -185,12 +236,12 @@ Singer : Shreya ghosal & Nachiketa Chakrabarty
     <div class="flex flex-wrap -mx-4 -mb-10 text-center">
       <div class="sm:w-1/1 mb-10 px-10">
         <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full" src="http://i3.ytimg.com/vi/Yw7PVtnG6KQ/hqdefault.jpg">
+          <img alt="content" class="object-cover object-center h-full w-full" src="http://i3.ytimg.com/vi/oW3LgwmaBVo/hqdefault.jpg">
         </div>
-        <a href="https://youtu.be/Yw7PVtnG6KQ"class="title-font text-2xl font-medium text-white mt-6 mb-3">লাল সারি পরিয়া কন্যা রক্ত আলতা পায়ে (sad song) </a>
+        <a href="https://youtu.be/oW3LgwmaBVo"class="title-font text-2xl font-medium text-white mt-6 mb-3">লাল সারি পরিয়া কন্যা রক্ত আলতা পায়ে (Sad Song) </a>
         <p class="leading-relaxed text-base"></p>
-        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadAudio(`Yw7PVtnG6KQ`,`লাল সারি`)">Download Audio</button>
-        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadVideo(`Yw7PVtnG6KQ`,`Physicswallah`)">Download Video</button>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadAudio(`oW3LgwmaBVo`,`লাল সারি`)">Download Audio</button>
+        <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-900 rounded" onclick="DownloadVideo(`oW3LgwmaBVo`,`Physicswallah`)">Download Video</button>
       </div>
     </div>
   </div>
@@ -274,7 +325,10 @@ Chotushkone</p>
     </div>
   </div>
 </section>
+</div>
 <!--10-->
+<!--Hindi-->
+<div class="hindi">
 <section class="text-gray-500 bg-gray-900 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -mx-4 -mb-10 text-center">
@@ -293,6 +347,7 @@ Singers : Shreya Ghoshal, Arijit Singh, Joi BaruaS04SUzfySc0</p>
     </div>
   </div>
 </section>
+</div>
 <!--footer-->
 <footer class="text-gray-500 bg-gray-900 body-font">
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
@@ -389,6 +444,101 @@ function DownloadVideo(vid,name){
   window.open(
     url,
     "_blank");
+</script>
+<script>
+	var openmodal = document.querySelectorAll('.modal-open')
+    for (var i = 0; i < openmodal.length; i++) {
+      openmodal[i].addEventListener('click', function(event){
+    	event.preventDefault()
+    	toggleModal()
+      })
+    }
+    
+    const overlay = document.querySelector('.modal-overlay')
+    overlay.addEventListener('click', toggleModal)
+    var closemodal = document.querySelectorAll('.modal-close')
+    for (var i = 0; i < closemodal.length; i++) {
+      closemodal[i].addEventListener('click', toggleModal)
+    }
+    document.onkeydown = function(evt) {
+      evt = evt || window.event
+      var isEscape = false
+      if ("key" in evt) {
+    	isEscape = (evt.key === "Escape" || evt.key === "Esc")
+      } else {
+    	isEscape = (evt.keyCode === 27)
+      }
+      if (isEscape && document.body.classList.contains('modal-active')) {
+    	toggleModal()
+      }
+    };
+    
+    
+    function toggleModal () {
+      const body = document.querySelector('body')
+      const modal = document.querySelector('.modal')
+      modal.classList.toggle('opacity-0')
+      modal.classList.toggle('pointer-events-none')
+      body.classList.toggle('modal-active')
+    }    
+</script>
+<script>
+	var ben = document.querySelector('#see');
+	var hin = document.querySelector('#hindisee');
+	var bengali = document.querySelector('#bengali');
+	var hindi = document.querySelector('.hindi');
+    function onButtonClick(){
+      bengali.style.display="block";
+      hindi.style.display="none";
+    };
+    ben.addEventListener("click",onButtonClick);
+    function onButtonClick2(){
+    	bengali.style.display="none";
+    	hindi.style.display="block";
+    };
+    hin.addEventListener("click", onButtonClick2);
+</script>
+<script>
+  /*window.addEventListener("load", function() {
+  // CHROME
+  if (navigator.userAgent.indexOf("Chrome") != -1 ) {
+    console.log("Google Chrome");
+    window.location.href="http://localhost:8000/browser.html";
+  }
+  // FIREFOX
+  else if (navigator.userAgent.indexOf("Firefox") != -1 ) {
+    console.log("Mozilla Firefox");
+  }
+  // INTERNET EXPLORER
+  else if (navigator.userAgent.indexOf("MSIE") != -1 ) {
+    console.log("Internet Exploder");
+    window.location.replace("http://localhost:8080/browser.html");
+  }
+  // EDGE
+  else if (navigator.userAgent.indexOf("Edge") != -1 ) {
+    console.log("Edge");
+    window.location.replace("http://localhost:8080/browser.html");
+  }
+  // SAFARI
+  else if (navigator.userAgent.indexOf("Safari") != -1 ) {
+    console.log("Safari");
+    window.location.replace("http://localhost:8080/browser.html");
+  }
+  // OPERA
+  else if (navigator.userAgent.indexOf("Opera") != -1 ) {
+    console.log("Opera");
+    window.location.replace("http://localhost:8080/browser.html");
+  }
+  // YANDEX BROWSER
+  else if (navigator.userAgent.indexOf("YaBrowser") != -1 ) {
+    console.log("YaBrowser");
+    window.location.replace("http://localhost:8080/browser.html");
+  }
+  // OTHERS
+  else {
+    console.log("Others");
+  }
+});*/
 </script>
 </body>
 </html>
